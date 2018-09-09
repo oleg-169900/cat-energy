@@ -1,0 +1,25 @@
+nav.main-nav
+  ul.main-nav__list
+    -
+      var items = [
+        {
+          mod: page === "index" ? "main-nav__item--active" : "",
+          link: page === "index" ? null : "index.html",
+          content: "Главная",
+        },
+        {
+          mod: page === "catalog" ? "main-nav__item--active" : "",
+          link: page === "catalog" ? null : "catalog.html",
+          content: "Каталог",
+        },
+        {
+          mod: page === "form" ? "main-nav__item--active" : "",
+          link: page === "form" ? null : "form.html",
+          content: "Подбор программы",
+        }
+      ]
+
+    - for (var i = 0; i <= items.length - 1; i++) {
+        li(class="main-nav__item "+items[i].mod)
+          a(href=items[i].link) #{items[i].content}
+    - }
