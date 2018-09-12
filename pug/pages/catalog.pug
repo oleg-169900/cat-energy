@@ -1,0 +1,23 @@
+- var page = "catalog";
+
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    link(rel="shortcut icon" href="favicon.png" type="image/x-icon")
+    link(rel="stylesheet" href="css/style.css")
+    meta(name="viewport" content="width=device-width")
+    title Каталог
+  body
+    div.body-wrapper
+      include ../modules/page-header.pug
+      main
+        div.page-heading
+          div.center.page-heading__center
+            h1.page-heading__title Каталог продукции
+        section.products
+          div.center.products__center
+            h2.hidden Товары
+            include ../modules/product.pug
+        include ../modules/contacts.pug
+      include ../modules/page-footer.pug
