@@ -1,0 +1,74 @@
+- var page = "form";
+
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    link(rel="shortcut icon" href="favicon.png" type="image/x-icon")
+    link(rel="stylesheet" href="css/style.css")
+    meta(name="viewport" content="width=device-width")
+    title Подбор программы
+  body
+    div.body-wrapper
+      include ../modules/page-header.pug
+      main
+        div.page-heading
+          div.center.page-heading__center
+            h1.page-heading__title Подбор программы
+            p.page-heading__text Заполните анкету, и мы подберём программу питания для Вашего кота
+        form.form(action="#" method="post")
+          div.center.form__center
+            div.field-text
+              label.form__label.feld-text__label
+                span.form__text.field-text__text Имя*
+                input.form__input.field-text__input(type="text" name="name" required)
+              label.form__label.feld-text__label
+                span.form__text.field-text__text Масса (кг)*
+                input.form__input.field-text__input(type="text" name="weight" required)
+              label.form__label.feld-text__label
+                span.form__text.field-text__text Возраст (лет)
+                input.form__input.field-text__input(type="text" name="age")
+            div.field__radio
+              label.form__label.field-radio__label
+                input.form__input.field-radio__input(type="radio" name="program" checked)
+                span.form__text.field-radio__text Похудение
+              label.form__label.field-radio__label
+                input.form__input.field-radio__input(type="radio" name="program")
+                span.form__text.field-radio__text Набор массы
+              label.form__label.field-radio__label
+                input.form__input.field-radio__input(type="radio" name="program")
+                span.form__text.field-radio__text Не знаю (нужен ваш совет)
+          hr.form__divider
+          div.center.form__center
+            div.field-text.field-text--contacts
+              h2.form__title Контактные данные (владельца кота)
+              label.form__label.feld-text__label
+                span.form__text.field-text__text E-mail*
+                input.form__input.field-text__input(type="text" name="email" required)
+              label.form__label.feld-text__label
+                span.form__text.field-text__text Телефон*
+                input.form__input.field-text__input(type="text" name="tel" required)
+          hr.form__divider
+          div.center.form__center
+            h2.form__title Комментарий
+            textarea.textarea(name="comment" rows="5" cols="24")
+          hr.form__divider
+          div.center.form__center
+            div.field-checkbox
+              h2.form__title Дополнительно
+              label.form__label.field-checkbox__label
+                input.form__input.field-checkbox__input(type="checkbox" name="extra" checked)
+                span.form__text.field-checkbox__text Сахарозаменитель
+              label.form__label.field-checkbox__label
+                input.form__input.field-checkbox__input(type="checkbox" name="extra")
+                span.form__text.field-checkbox__text Питьевая вода
+              label.form__label.field-checkbox__label
+                input.form__input.field-checkbox__input(type="checkbox" name="extra")
+                span.form__text.field-checkbox__text Молоко
+              label.form__label.field-checkbox__label
+                input.form__input.field-checkbox__input(type="checkbox" name="extra")
+                span.form__text.field-checkbox__text Витамины
+            input.form__btn(type="submit" name="send" value="Отправить заявку")
+            div.form__text.form__text--required *&nbsp;&nbsp;&ndash;&nbsp;&nbsp;Обязательные поля
+        include ../modules/contacts.pug
+      include ../modules/page-footer.pug
