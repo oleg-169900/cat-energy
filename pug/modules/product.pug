@@ -9,6 +9,7 @@
       srcsetMedium: "img/chicken-small-tablet@2x.png 2x\, img/chicken-small-tablet@1x.png 1x",
       srcsetSmall: "img/chicken-small-mobile@2x.jpg 2x",
       src: "img/chicken-small-mobile@1x.jpg",
+      id: "pro-little",
     },
     {
       title: "Cat Energy Pro 1000 г",
@@ -19,6 +20,7 @@
       srcsetMedium: "img/chicken-big-tablet@2x.png 2x\, img/chicken-big-tablet@1x.png 1x",
       srcsetSmall: "img/chicken-big-mobile@2x.jpg 2x",
       src: "img/chicken-big-mobile@1x.jpg",
+      id: "pro-big",
     },
     {
       title: "Cat Energy Pro 500 г",
@@ -29,6 +31,7 @@
       srcsetMedium: "img/fish-small-tablet@2x.png 2x\, img/fish-small-tablet@1x.png 1x",
       srcsetSmall: "img/fish-small-mobile@2x.jpg 2x",
       src: "img/fish-small-mobile@1x.jpg",
+      id: "pro-little-fish",
     },
     {
       title: "Cat Energy Pro 1000 г",
@@ -39,6 +42,7 @@
       srcsetMedium: "img/fish-big-tablet@2x.png 2x\, img/fish-big-tablet@1x.png 1x",
       srcsetSmall: "img/fish-big-mobile@2x.jpg 2x",
       src: "img/fish-big-mobile@1x.jpg",
+      id: "pro-big-fish",
     },
     {
       title: "Cat Energy Slim 500 г",
@@ -49,6 +53,7 @@
       srcsetMedium: "img/buckwheat-small-tablet@2x.png 2x\, img/buckwheat-small-tablet@1x.png 1x",
       srcsetSmall: "img/buckwheat-small-mobile@2x.jpg 2x",
       src: "img/buckwheat-small-mobile@1x.jpg",
+      id: "slim-little",
     },
     {
       title: "Cat Energy Slim 1000 г",
@@ -59,6 +64,7 @@
       srcsetMedium: "img/buckwheat-big-tablet@2x.png 2x\, img/buckwheat-big-tablet@1x.png 1x",
       srcsetSmall: "img/buckwheat-big-mobile@2x.jpg 2x",
       src: "img/buckwheat-big-mobile@1x.jpg",
+      id: "slim-big",
     },
     {
       title: "Cat Energy Slim 500 г",
@@ -69,11 +75,12 @@
       srcsetMedium: "img/rice-small-tablet@2x.png 2x\, img/rice-small-tablet@1x.png 1x",
       srcsetSmall: "img/rice-small-mobile@2x.jpg 2x",
       src: "img/rice-small-mobile@1x.jpg",
+      id: "slim-little-rice",
     },
   ]
 
 - for (var i = 0; i <= products.length - 1; i++) {
-    article.product
+    article.product(id= products[i].id)
       h3.product__title #{products[i].title}
       picture.product__pic
         source(media="(min-width: 1200px)" srcset= products[i].srcsetBig)

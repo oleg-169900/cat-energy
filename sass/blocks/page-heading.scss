@@ -1,0 +1,66 @@
+.page-heading {
+  padding-top: 25px;
+  @include padding-mobile;
+}
+
+.page-heading--main {
+  text-align: center;
+  color: $text-color-3;
+
+  background-image: url("../img/index-background-mobile@1x.jpg"),
+                      linear-gradient($bg-color-1 305px, #ffffff 305px);
+  background-repeat: no-repeat;
+  background-position:center top;
+  background-size: contain;
+}
+
+.page-heading__title {
+  text-align: center;
+  font-weight: normal;
+  font-size: $font-size-12;
+  line-height: 36px;
+}
+
+.page-heading__text {
+  padding-top: 20px;
+  font-size: $font-size-1;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.page-heading__pic {
+  display: block;
+  margin-top: 25px;
+}
+
+.page-heading__link {
+  display: block;
+  padding: 10px 0;
+
+  font-size: $font-size-1;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  background: #68b738;
+}
+
+.page-heading__link:hover {
+  background: #5eaa2f;
+}
+
+.page-heading__link:active {
+  background: #5eaa2f;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media (min-width: $mobile-width) and (min-resolution: 144dpi),
+       (min-width: $mobile-width) and (min-resolution: 1.5dppx) {
+  // .page-heading {
+
+  // }
+
+  .page-heading--main {
+    background-image: url("../img/index-background-mobile@1x.jpg"),
+                        linear-gradient($bg-color-1 305px, #ffffff 305px);
+  }
+}
