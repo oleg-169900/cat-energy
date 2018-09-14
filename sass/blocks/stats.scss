@@ -1,0 +1,45 @@
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.stats__item {
+  width: 124px;
+  padding-top: 10px;
+  text-align: center;
+  border: 1px solid $border-color;
+}
+
+.stats__title {
+  display: block;
+  font-size: $font-size-6;
+  text-transform: uppercase;
+  color: $text-color-2;
+}
+
+.stats__text {
+  display: block;
+  width: 55px;
+  margin: 0 auto;
+  margin-bottom: -15px;
+  padding: 5px 15px;
+  padding-bottom: 0;
+
+  background-color: $bg-color-2;
+
+  font-family: arial;
+  font-size: $font-size-0;
+}
+
+.stats__text--costs {
+  width: 100%;
+  margin: 0;
+  margin-top: 30px;
+
+  text-align: center;
+  font-family: "OswaldRegular", arial, sans-serif;
+  font-size: $font-size-1;
+  text-transform: uppercase;
+}

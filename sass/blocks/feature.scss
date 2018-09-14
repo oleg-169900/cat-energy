@@ -1,0 +1,42 @@
+.feature {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  color: $text-color-1;
+}
+
+.feature::before {
+  content: "";
+
+  width: 58px;
+  height: 58px;
+  margin-right: 20px;
+
+  background-color: $bg-color-1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 55px 55px;
+}
+
+.feature--ingredients::before {
+  background-image: url("../img/leaf.png");
+}
+
+.feature--powder::before {
+  background-image: url("../img/powder.png");
+}
+
+.feature--change::before {
+  background-image: url("../img/dining.png");
+}
+
+.feature--result::before {
+  background-image: url("../img/clock.png");
+}
+
+.feature__text {
+  width: 195px;
+  font-family: arial;
+  font-size: $font-size-1;
+  line-height: 18px;
+}

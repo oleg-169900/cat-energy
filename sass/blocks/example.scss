@@ -1,0 +1,22 @@
+.example {
+  padding: 25px 0;
+  color: $text-color-1;
+  background-color: $bg-color-2;
+}
+
+.example__title {
+  margin-bottom: 30px;
+  @include padding-mobile;
+
+  font-size: $font-size-12;
+  line-height: 60px;
+  color: $text-color-2;
+  font-weight: normal;
+}
+
+.example__text {
+  @include padding-mobile;
+  font-family: arial;
+  font-size: $font-size-1;
+  line-height: 18px;
+}
