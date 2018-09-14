@@ -1,4 +1,4 @@
-nav.main-nav
+nav.main-nav.main-nav--nojs
   ul.main-nav__list
     -
       var items = [
@@ -21,5 +21,5 @@ nav.main-nav
 
     - for (var i = 0; i <= items.length - 1; i++) {
         li(class="main-nav__item "+items[i].mod)
-          a(href=items[i].link) #{items[i].content}
+          a.main-nav__link(href=items[i].link) #{items[i].content}
     - }
