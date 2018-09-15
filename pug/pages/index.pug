@@ -84,15 +84,16 @@ html(lang="ru")
                   source(media="(min-width: 1200px)" srcset="img/before-desktop@2x.png 2x, img/before-desktop@1x.png 1x")
                   source(media="(min-width: 768px)" srcset="img/before-tablet@2x.png 2x, img/before-tablet@1x.png 1x")
                   img(src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Толстый кот")
-                div.hidden Было
+                div.stats__inscription Было
                 picture.example__pic.example__pic--after
                   source(media="(min-width: 1200px)" srcset="img/after-desktop@2x.png 2x, img/after-desktop@1x.png 1x")
                   source(media="(min-width: 768px)" srcset="img/after-tablet@2x.png 2x, img/after-tablet@1x.png 1x")
                   img(src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Стройный кот")
-                div.hidden Стало
+                div.stats__inscription Стало
                 div.stats__controls
                   button.stats__control.stats__control--active#before-btn(type="button") Было
                   button.stats__control#after-btn(type="button") Стало
         include ../modules/contacts.pug
       include ../modules/page-footer.pug
     script(src="js/menu-toggle.js")
+    script(src="js/image-toggle.js")

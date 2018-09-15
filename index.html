@@ -82,12 +82,12 @@
                   <source media="(min-width: 1200px)" srcset="img/before-desktop@2x.png 2x, img/before-desktop@1x.png 1x">
                   <source media="(min-width: 768px)" srcset="img/before-tablet@2x.png 2x, img/before-tablet@1x.png 1x"><img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Толстый кот">
                 </picture>
-                <div class="hidden">Было</div>
+                <div class="stats__inscription">Было</div>
                 <picture class="example__pic example__pic--after">
                   <source media="(min-width: 1200px)" srcset="img/after-desktop@2x.png 2x, img/after-desktop@1x.png 1x">
                   <source media="(min-width: 768px)" srcset="img/after-tablet@2x.png 2x, img/after-tablet@1x.png 1x"><img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Стройный кот">
                 </picture>
-                <div class="hidden">Стало</div>
+                <div class="stats__inscription">Стало</div>
                 <div class="stats__controls">
                   <button class="stats__control stats__control--active" id="before-btn" type="button">Было</button>
                   <button class="stats__control" id="after-btn" type="button">Стало</button>
@@ -98,21 +98,24 @@
         </section>
         <section class="contacts">
           <h2 class="hidden">Контакты</h2>
-          <div class="contacts__inner"><span class="contacts__text">Приглашаем к сотрудничеству дилеров!</span><a class="contacts__text contacts__text--address" href="#">ул. Большая Конюшенная, д. 19/8</a><span class="contacts__text contacts__text--address">Санкт-Петербург</span></div>
+          <div class="contacts__inner"><span class="contacts__text">Приглашаем к сотрудничеству дилеров!</span><a class="contacts__text contacts__text--address" href="#">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</a></div>
           <div class="contacts__map-wrapper">
             <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253056745!2d30.320853351703562!3d59.93871916896517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1536493012736"></iframe>
           </div>
         </section>
       </main>
       <footer class="page-footer">
-        <picture class="page-footer__logo"><a class="page-footer__link" href="index.html"><img src="img/logo-footer.svg" width="130" height="30" alt="Логотип"></a></picture>
-        <ul class="socials">
-          <li class="socials__item"><a class="socials__link" href="#"><img src="img/icon-vk.svg" alt="Вконтакте" width="32" height="16"></a></li>
-          <li class="socials__item"><a class="socials__link" href="#"><img src="img/icon-insta.svg" alt="Instagram" width="24" height="24"></a></li>
-          <li class="socials__item"><a class="socials__link" href="#"><img src="img/icon-fb.svg" alt="Facebook" width="16" height="28"></a></li>
-        </ul><a class="copyright" href="https://htmlacademy.ru/">HTML Academy<img src="img/htmlacademy.svg" alt="HTML Academy" width="28" height="34"></a>
+        <div class="center page-footer__center">
+          <picture class="page-footer__logo"><a class="page-footer__link" href="index.html"><img src="img/logo-footer.svg" width="130" height="30" alt="Логотип"></a></picture>
+          <ul class="socials">
+            <li class="socials__item"><a class="socials__link" href="#"><img src="img/icon-vk.svg" alt="Вконтакте" width="32" height="16"></a></li>
+            <li class="socials__item"><a class="socials__link" href="#"><img src="img/icon-insta.svg" alt="Instagram" width="24" height="24"></a></li>
+            <li class="socials__item"><a class="socials__link" href="#"><img src="img/icon-fb.svg" alt="Facebook" width="16" height="28"></a></li>
+          </ul><a class="copyright" href="https://htmlacademy.ru/">HTML Academy<img src="img/htmlacademy.svg" alt="HTML Academy" width="40" height="45"></a>
+        </div>
       </footer>
     </div>
     <script src="js/menu-toggle.js"></script>
+    <script src="js/image-toggle.js"></script>
   </body>
 </html>

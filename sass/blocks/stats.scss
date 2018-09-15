@@ -37,9 +37,45 @@
   width: 100%;
   margin: 0;
   margin-top: 30px;
+  margin-bottom: 30px;
 
   text-align: center;
   font-family: "OswaldRegular", arial, sans-serif;
   font-size: $font-size-1;
   text-transform: uppercase;
+}
+
+.stats__inscription {
+  margin: 20px auto;
+
+  text-align: center;
+  font-size: $font-size-2;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.stats__controls {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.stats__control {
+  width: 100px;
+  padding: 10px 0;
+
+  text-align: center;
+  color: $text-color-1;
+  font-family: "OswaldRegular", arial, sans-serif;
+  font-size: $font-size-2;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  background-color: $bg-color-2;
+}
+
+.stats__control--active {
+  background-color: $bg-color-1;
+  color: $text-color-3;
 }
