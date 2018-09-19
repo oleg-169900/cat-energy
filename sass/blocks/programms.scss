@@ -2,3 +2,10 @@
   padding-top: 20px;
   @include padding-mobile;
 }
+
+@media (min-width: $tablet-width) {
+  .programms {
+    padding: 0;
+    padding-top: 20px;
+  }
+}

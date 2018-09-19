@@ -57,3 +57,28 @@
   position: static;
   display: block !important;
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    position: static;
+
+    display: block;
+    margin-left: 75px;
+    padding: 0;
+
+    font-family: "OswaldRegular", arial, sans-serif;
+    font-size: $font-size-3;
+    line-height: 25px;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .main-nav__item {
+    padding: 0;
+    border: none;
+  }
+}

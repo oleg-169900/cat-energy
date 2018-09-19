@@ -53,6 +53,59 @@
   color: rgba(255, 255, 255, 0.5);
 }
 
+@media (min-width: $tablet-width) {
+  .page-heading {
+    padding: 0;
+    padding-top: 50px;
+  }
+
+  .page-heading__center {
+    position: relative;
+  }
+
+  .page-heading--main {
+    color: $text-color-2;
+    background-color: #ffffff;
+    background-image: none;
+  }
+
+  .page-heading__title {
+    width: 427px;
+    margin-left: 100px;
+
+    font-size: $font-size-24;
+    line-height: 60px;
+    text-align: left;
+  }
+
+  .page-heading__text {
+    width: 300px;
+    margin-left: 100px;
+    padding-top: 50px;
+
+    text-align: left;
+    font-size: $font-size-4;
+    font-weight: normal;
+  }
+
+  .page-heading__pic {
+    position: relative;
+    z-index: 10;
+  }
+
+  .page-heading__link {
+    position: absolute;
+    top: 235px;
+    left: 100px;
+    z-index: 100;
+
+    width: 245px;
+    padding: 17px 0;
+    font-size: $font-size-4;
+    color: $text-color-3;
+  }
+}
+
 @media (min-width: $mobile-width) and (min-resolution: 144dpi),
        (min-width: $mobile-width) and (min-resolution: 1.5dppx) {
   // .page-heading {
@@ -62,5 +115,16 @@
   .page-heading--main {
     background-image: url("../img/index-background-mobile@1x.jpg"),
                         linear-gradient($bg-color-1 305px, #ffffff 305px);
+  }
+}
+
+@media (min-width: $tablet-width) and (min-resolution: 144dpi),
+       (min-width: $tablet-width) and (min-resolution: 1.5dppx) {
+  // .page-heading {
+
+  // }
+
+  .page-heading--main {
+    background-image: none;
   }
 }

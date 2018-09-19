@@ -1,28 +1,17 @@
 .programm {
+  position: relative;
+
   margin-bottom: 20px;
   padding: 20px;
   padding-bottom: 0;
+
   background: #f2f2f2;
 }
 
-.programm__title {
-  display: inline-flex;
-  align-items: center;
-
-  position: relative;
-
-  padding-bottom: 15px;
-
-  color: $text-color-2;
-  font-size: $font-size-6;
-  text-transform: uppercase;
-  font-weight: normal;
-}
-
-.programm__title::after {
+.programm::after {
   content: "";
-
-  order: -1;
+  position: absolute;
+  top: 15px;
 
   display: block;
   width: 50px;
@@ -34,11 +23,14 @@
   border-radius: 50%;
 }
 
-.programm__title--slim:before {
+.programm--slim:before {
   content: "";
   position: absolute;
-  left: 10px;
+  left: 30px;
+  top: 15px;
+  z-index: 100;
 
+  display: block;
   width: 35px;
   height: 50px;
 
@@ -46,16 +38,29 @@
   background-repeat: no-repeat;
 }
 
-.programm__title--pro:before {
+.programm--pro:before {
   content: "";
   position: absolute;
-  left: -10px;
+  z-index: 100;
+  top: 25px;
+  left: 10px;
 
+  display: block;
   width: 71px;
   height: 28px;
 
   background-image: url("../img/icon-cat-pro.svg");
   background-repeat: no-repeat;
+}
+
+.programm__title {
+  padding-left: 70px;
+  padding-bottom: 30px;
+
+  color: $text-color-2;
+  font-size: $font-size-6;
+  text-transform: uppercase;
+  font-weight: normal;
 }
 
 .programm__text {
@@ -80,4 +85,45 @@
 
   font-size: $font-size-2;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .programm {
+    padding: 0 50px;
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
+
+  .programm::after {
+    top: 100px;
+    right: 40px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .programm--slim:before {
+    top: 90px;
+    left: 480px;
+    width: 145px;
+    height: 200px;
+  }
+
+  .programm--pro:before {
+    top: 150px;
+    left: 430px;
+    width: 250px;
+    height: 115px;
+  }
+
+  .programm__title {
+    padding: 0;
+    font-size: $font-size-12;
+  }
+
+  .programm__text {
+    width: 373px;
+    font-size: $font-size-2;
+    line-height: 24px;
+    border: none;
+  }
 }

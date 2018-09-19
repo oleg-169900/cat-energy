@@ -40,3 +40,60 @@
   font-size: $font-size-1;
   line-height: 18px;
 }
+
+@media (min-width: $tablet-width) {
+  .feature {
+    position: relative;
+
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+    width: 240px;
+    min-height: 230px;
+    padding-right: 110px;
+  }
+
+  .feature::before {
+    position: relative;
+    z-index: 100;
+    width: 80px;
+    height: 80px;
+  }
+
+  .feature::after {
+    position: absolute;
+    top: -75px;
+    right: 130px;
+    z-index: 10;
+
+    color: $bg-color-2;
+    font-size: 200px;
+  }
+
+  .feature--ingredients::after {
+    content: "1";
+  }
+
+  .feature--powder::after {
+    content: "2";
+  }
+
+  .feature--change::after {
+    content: "3";
+  }
+
+  .feature--result::after {
+    content: "4";
+  }
+
+  .feature__text {
+    position: relative;
+    z-index: 100;
+
+    width: 100%;
+    margin-top: 30px;
+
+    font-size: $font-size-2;
+    line-height: 24px;
+  }
+}

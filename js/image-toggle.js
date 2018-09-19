@@ -3,8 +3,8 @@
 (function () {
   var beforeBtn = document.querySelector("#before-btn");
   var afterBtn = document.querySelector("#after-btn");
-  var beforeImg = document.querySelector(".example__pic--before");
-  var afterImg = document.querySelector(".example__pic--after");
+  var beforeImg = document.querySelector(".stats__pic--before");
+  var afterImg = document.querySelector(".stats__pic--after");
   var inscriptions = Object.values(document.querySelectorAll(".stats__inscription"));
 
   afterImg.classList.add("hidden");

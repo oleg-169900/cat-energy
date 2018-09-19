@@ -62,8 +62,8 @@
   outline: none;
 }
 
-// @media (min-width: $tablet-width) {
-//   .menu-toggle {
-//     display: none;
-//   }
-// }
+@media (min-width: $tablet-width) {
+  .menu-toggle {
+    display: none;
+  }
+}

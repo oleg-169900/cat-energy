@@ -7,3 +7,9 @@
 
   background: #ffffff;
 }
+
+@media (min-width: $tablet-width) {
+  .body-wrapper {
+    max-width: 1200px;
+  }
+}

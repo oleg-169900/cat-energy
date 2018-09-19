@@ -2,3 +2,10 @@
   max-width: 425px;
   margin: 0 auto;
 }
+
+@media (min-width: $tablet-width) {
+  .center {
+    width: 708px;
+    max-width: none;
+  }
+}
