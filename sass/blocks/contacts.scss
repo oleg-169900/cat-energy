@@ -36,5 +36,50 @@
 .contacts__map {
   border: none;
   width: 100%;
-  height: 365px;
+  height: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__inner {
+    width: 708px;
+    margin: 0 auto;
+    padding: 70px 0;
+  }
+
+  .contacts__text {
+    width: 165px;
+    margin-right: auto;
+    font-size: $font-size-4;
+    line-height: 25px;
+  }
+
+  .contacts__text--address {
+    margin-right: 0;
+    margin-left: auto;
+
+    text-align: right;
+    font-size: $font-size-2;
+    line-height: 20px;
+  }
+
+  .contacts__map-wrapper {
+    height: 400px;
+    background-image: url("../img/map-pin.png"), url("../img/bg-map-tablet@1x.png");
+  }
+}
+
+@media (min-width: $mobile-width) and (min-resolution: 144dpi),
+       (min-width: $mobile-width) and (min-resolution: 1.5dppx) {
+  .contacts__map-wrapper {
+    background-image: url("../img/map-pin.png"), url("../img/bg-map-mobile@2x.png");
+    background-size: 50px 45px, 320px 365px;
+  }
+}
+
+@media (min-width: $tablet-width) and (min-resolution: 144dpi),
+       (min-width: $tablet-width) and (min-resolution: 1.5dppx) {
+  .contacts__map-wrapper {
+    background-image: url("../img/map-pin.png"), url("../img/bg-map-tablet@2x.png");
+    background-size: 50px 45px, 768px 400px;
+  }
 }

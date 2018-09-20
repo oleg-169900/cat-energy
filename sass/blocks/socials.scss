@@ -14,3 +14,15 @@
 .socials__item {
   margin: 0 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .socials {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  .socials__item {
+    margin: 0 15px;
+  }
+}

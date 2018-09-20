@@ -8,3 +8,15 @@
 .page-footer__center {
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    padding: 60px 0;
+  }
+
+  .page-footer__center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
