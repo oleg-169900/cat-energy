@@ -1,6 +1,7 @@
 "use strict";
 
 (function () {
+  var stats = document.querySelector('.stats');
   var beforeBtn = document.querySelector("#before-btn");
   var afterBtn = document.querySelector("#after-btn");
   var beforeImg = document.querySelector(".stats__pic--before");
@@ -11,6 +12,10 @@
   inscriptions.map(function(val) {
     val.classList.add("hidden");
   })
+
+  if (stats.classList.contains("stats--nojs")) {
+    stats.classList.remove("stats--nojs");
+  }
 
 
   beforeBtn.addEventListener("click", function() {

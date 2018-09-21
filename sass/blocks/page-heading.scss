@@ -67,25 +67,25 @@
     color: $text-color-2;
     background-color: #ffffff;
     background-image: none;
-  }
 
-  .page-heading__title {
-    width: 427px;
-    margin-left: 100px;
+    .page-heading__title {
+      width: 427px;
+      margin-left: 100px;
 
-    font-size: $font-size-24;
-    line-height: 60px;
-    text-align: left;
-  }
+      font-size: $font-size-24;
+      line-height: 60px;
+      text-align: left;
+    }
 
-  .page-heading__text {
-    width: 300px;
-    margin-left: 100px;
-    padding-top: 50px;
+    .page-heading__text {
+      width: 300px;
+      margin-left: 100px;
+      padding-top: 50px;
 
-    text-align: left;
-    font-size: $font-size-4;
-    font-weight: normal;
+      text-align: left;
+      font-size: $font-size-4;
+      font-weight: normal;
+    }
   }
 
   .page-heading__pic {
@@ -103,6 +103,50 @@
     padding: 17px 0;
     font-size: $font-size-4;
     color: $text-color-3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-heading--main {
+    background: transparent;
+
+    .page-heading__center {
+      margin-top: 30px;
+    }
+
+    .page-heading__title {
+      margin-left: 80px;
+    }
+
+    .page-heading__text {
+      margin-left: 80px;
+    }
+  }
+
+  .page-heading--main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: block;
+    width: 50%;
+    height: 695px;
+
+    background-color: $bg-color-1;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+  }
+
+  .page-heading__pic {
+    margin-top: -280px;
+    margin-left: 150px;
+  }
+
+  .page-heading__link {
+    left: 80px;
   }
 }
 
@@ -126,5 +170,12 @@
 
   .page-heading--main {
     background-image: none;
+  }
+}
+
+@media (min-width: $desktop-width) and (min-resolution: 144dpi),
+       (min-width: $desktop-width) and (min-resolution: 1.5dppx) {
+  .page-heading--main::before {
+    background-image: url("../img/index-background-desktop@2x.jpg");
   }
 }

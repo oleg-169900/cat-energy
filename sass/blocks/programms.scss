@@ -9,3 +9,16 @@
     padding-top: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .programms {
+    margin-top: 130px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .programms__center {
+    display: flex;
+    justify-content: space-between;
+  }
+}

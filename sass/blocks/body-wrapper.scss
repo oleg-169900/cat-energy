@@ -13,3 +13,9 @@
     max-width: 1200px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .body-wrapper {
+    max-width: 3000px;
+  }
+}

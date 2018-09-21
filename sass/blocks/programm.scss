@@ -127,3 +127,36 @@
     border: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .programm {
+    width: 470px;
+    padding-bottom: 50px;
+  }
+
+  .programm::after {
+    top: 50px;
+    left: 40px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .programm--slim:before {
+    top: 45px;
+    left: 55px;
+    width: 71px;
+    height: 97px;
+  }
+
+  .programm--pro:before {
+    top: 75px;
+    left: 15px;
+    width: 137px;
+    height: 59px;
+  }
+
+  .programm__title {
+    margin-bottom: 70px;
+    margin-left: 160px;
+  }
+}

@@ -9,3 +9,10 @@
     max-width: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .center {
+    width: 1200px;
+    max-width: none;
+  }
+}

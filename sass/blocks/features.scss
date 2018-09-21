@@ -29,3 +29,10 @@
     flex-wrap: wrap;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .features__list {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}

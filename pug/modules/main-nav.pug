@@ -1,4 +1,6 @@
-nav.main-nav.main-nav--nojs.hidden
+- var navMod = page === "index" ? "main-nav--main" : null;
+
+nav(class="main-nav main-nav--nojs hidden " +navMod)
   ul.main-nav__list
     -
       var items = [
