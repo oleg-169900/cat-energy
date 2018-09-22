@@ -11,6 +11,10 @@
   @include padding-mobile;
 }
 
+.contacts--secondary {
+  background-color: $bg-color-2;
+}
+
 .contacts__text {
   width: 50%;
   font-size: $font-size-2;

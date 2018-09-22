@@ -19,16 +19,17 @@ html(lang="ru")
         form.form(action="#" method="post")
           div.center.form__center
             div.field-text
-              label.form__label.feld-text__label
+              label.form__label.field-text__label
                 span.form__text.field-text__text Имя*
                 input.form__input.field-text__input(type="text" name="name" required)
-              label.form__label.feld-text__label
+              label.form__label.field-text__label
                 span.form__text.field-text__text Масса (кг)*
                 input.form__input.field-text__input(type="text" name="weight" required)
-              label.form__label.feld-text__label
+              label.form__label.field-text__label
                 span.form__text.field-text__text Возраст (лет)
                 input.form__input.field-text__input(type="text" name="age")
-            div.field__radio
+          div.center.form__center
+            div.field-radio
               label.form__label.field-radio__label
                 input.form__input.field-radio__input(type="radio" name="program" checked)
                 span.form__text.field-radio__text Похудение
@@ -42,10 +43,10 @@ html(lang="ru")
           div.center.form__center
             div.field-text.field-text--contacts
               h2.form__title Контактные данные (владельца кота)
-              label.form__label.feld-text__label
+              label.form__label.field-text__label
                 span.form__text.field-text__text E-mail*
                 input.form__input.field-text__input(type="text" name="email" required)
-              label.form__label.feld-text__label
+              label.form__label.field-text__label
                 span.form__text.field-text__text Телефон*
                 input.form__input.field-text__input(type="text" name="tel" required)
           hr.form__divider

@@ -1,4 +1,6 @@
-section.contacts
+-var mod = page !== "index" ? "contacts--secondary" : "";
+
+section(class="contacts " +mod)
   h2.hidden Контакты
   div.contacts__inner
     span.contacts__text Приглашаем к сотрудничеству дилеров!

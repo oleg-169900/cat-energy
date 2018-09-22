@@ -1,6 +1,8 @@
 .page-heading {
   padding-top: 25px;
+  padding-bottom: 20px;
   @include padding-mobile;
+  border-top: 2px solid $border-color;
 }
 
 .page-heading--main {
@@ -12,20 +14,30 @@
   background-repeat: no-repeat;
   background-position:center top;
   background-size: contain;
+
+  border: none;
+
+  .page-heading__text {
+    width: auto;
+    font-weight: bold;
+  }
+
+  .page-heading__title {
+    text-align: center;
+  }
 }
 
 .page-heading__title {
-  text-align: center;
   font-weight: normal;
   font-size: $font-size-12;
   line-height: 36px;
 }
 
 .page-heading__text {
+  width: 250px;
   padding-top: 20px;
   font-size: $font-size-1;
   text-transform: uppercase;
-  font-weight: bold;
 }
 
 .page-heading__pic {

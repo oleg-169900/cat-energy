@@ -17,7 +17,7 @@
                 <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/logo-tablet.svg"><img src="img/logo-mobile.svg" width="200" height="60" alt="Логотип">
               </picture></a></div>
-          <nav class="main-nav main-nav--nojs hidden null">
+          <nav class="main-nav main-nav--nojs hidden ">
             <ul class="main-nav__list">
               <li class="main-nav__item "><a class="main-nav__link" href="index.html">Главная</a></li>
               <li class="main-nav__item "><a class="main-nav__link" href="catalog.html">Каталог</a></li>
@@ -36,17 +36,19 @@
         <form class="form" action="#" method="post">
           <div class="center form__center">
             <div class="field-text">
-              <label class="form__label feld-text__label"><span class="form__text field-text__text">Имя*</span>
+              <label class="form__label field-text__label"><span class="form__text field-text__text">Имя*</span>
                 <input class="form__input field-text__input" type="text" name="name" required>
               </label>
-              <label class="form__label feld-text__label"><span class="form__text field-text__text">Масса (кг)*</span>
+              <label class="form__label field-text__label"><span class="form__text field-text__text">Масса (кг)*</span>
                 <input class="form__input field-text__input" type="text" name="weight" required>
               </label>
-              <label class="form__label feld-text__label"><span class="form__text field-text__text">Возраст (лет)</span>
+              <label class="form__label field-text__label"><span class="form__text field-text__text">Возраст (лет)</span>
                 <input class="form__input field-text__input" type="text" name="age">
               </label>
             </div>
-            <div class="field__radio">
+          </div>
+          <div class="center form__center">
+            <div class="field-radio">
               <label class="form__label field-radio__label">
                 <input class="form__input field-radio__input" type="radio" name="program" checked><span class="form__text field-radio__text">Похудение</span>
               </label>
@@ -62,10 +64,10 @@
           <div class="center form__center">
             <div class="field-text field-text--contacts">
               <h2 class="form__title">Контактные данные (владельца кота)</h2>
-              <label class="form__label feld-text__label"><span class="form__text field-text__text">E-mail*</span>
+              <label class="form__label field-text__label"><span class="form__text field-text__text">E-mail*</span>
                 <input class="form__input field-text__input" type="text" name="email" required>
               </label>
-              <label class="form__label feld-text__label"><span class="form__text field-text__text">Телефон*</span>
+              <label class="form__label field-text__label"><span class="form__text field-text__text">Телефон*</span>
                 <input class="form__input field-text__input" type="text" name="tel" required>
               </label>
             </div>
@@ -96,7 +98,7 @@
             <div class="form__text form__text--required">*&nbsp;&nbsp;&ndash;&nbsp;&nbsp;Обязательные поля</div>
           </div>
         </form>
-        <section class="contacts">
+        <section class="contacts contacts--secondary">
           <h2 class="hidden">Контакты</h2>
           <div class="contacts__inner"><span class="contacts__text">Приглашаем к сотрудничеству дилеров!</span><a class="contacts__text contacts__text--address" href="#">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</a></div>
           <div class="contacts__map-wrapper">
