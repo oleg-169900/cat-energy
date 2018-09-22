@@ -17,8 +17,8 @@ html(lang="ru")
             h1.page-heading__title Подбор программы
             p.page-heading__text Заполните анкету, и мы подберём программу питания для Вашего кота
         form.form(action="#" method="post")
-          div.center.form__center
-            div.field-text
+          div.field-text
+            div.center.form__center
               label.form__label.field-text__label
                 span.form__text.field-text__text Имя*
                 input.form__input.field-text__input(type="text" name="name" required)
@@ -28,8 +28,8 @@ html(lang="ru")
               label.form__label.field-text__label
                 span.form__text.field-text__text Возраст (лет)
                 input.form__input.field-text__input(type="text" name="age")
-          div.center.form__center
-            div.field-radio
+          div.field-radio
+            div.center.form__center
               label.form__label.field-radio__label
                 input.form__input.field-radio__input(type="radio" name="program" checked)
                 span.form__text.field-radio__text Похудение
@@ -39,24 +39,22 @@ html(lang="ru")
               label.form__label.field-radio__label
                 input.form__input.field-radio__input(type="radio" name="program")
                 span.form__text.field-radio__text Не знаю (нужен ваш совет)
-          hr.form__divider
-          div.center.form__center
-            div.field-text.field-text--contacts
-              h2.form__title Контактные данные (владельца кота)
+          div.field-text.field-text--contacts
+            div.center.form__center
+              h2.form__title.field-text__title Контактные данные (владельца кота)
               label.form__label.field-text__label
                 span.form__text.field-text__text E-mail*
                 input.form__input.field-text__input(type="text" name="email" required)
               label.form__label.field-text__label
                 span.form__text.field-text__text Телефон*
                 input.form__input.field-text__input(type="text" name="tel" required)
-          hr.form__divider
-          div.center.form__center
-            h2.form__title Комментарий
-            textarea.textarea(name="comment" rows="5" cols="24")
-          hr.form__divider
-          div.center.form__center
-            div.field-checkbox
-              h2.form__title Дополнительно
+          div.field-textarea
+            div.center.form__center
+              h2.form__title.field-textarea__title Комментарий
+              div.field-textarea__textarea.textarea(name="comment" rows="5" cols="24")
+          div.field-checkbox
+            div.center.form__center
+              h2.form__title.field-checkbox__title Дополнительно
               label.form__label.field-checkbox__label
                 input.form__input.field-checkbox__input(type="checkbox" name="extra" checked)
                 span.form__text.field-checkbox__text Сахарозаменитель

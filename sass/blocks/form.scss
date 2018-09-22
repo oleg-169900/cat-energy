@@ -1,16 +1,12 @@
 .form {
+  padding-bottom: 30px;
   font-size: $font-size-2;
   text-transform: uppercase;
 }
 
 .form__center {
-  position: relative;
   padding: 20px 0;
-}
-
-.form__center:first-child,
-.form__center:nth-child(2) {
-  border-bottom: 1px solid $border-color;
+  @include padding-mobile;
 }
 
 .form__label {
@@ -30,22 +26,15 @@
   border: 1px solid $border-color;
 }
 
-.form__divider {
-  height: 3px;
-  margin-top: 50px;
-  background-color: $bg-color-1;
-  border: none;
-}
+// .form__divider {
+//   height: 3px;
+//   margin-top: 50px;
+//   background-color: $bg-color-1;
+//   border: none;
+// }
 
 .form__title {
-  position: absolute;
-  top: -15px;
-  left: 0;
-  z-index: 100;
-
-  max-width: 200px;
-
-  padding: 0 20px;
+  margin-bottom: 30px;
 
   font-size: $font-size-6;
   line-height: 24px;

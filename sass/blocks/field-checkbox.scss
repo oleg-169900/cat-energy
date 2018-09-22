@@ -1,5 +1,24 @@
 .field-checkbox {
-  @include padding-mobile;;
+  position: relative;
+}
+
+.field-checkbox::after {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  top: 34px;
+  right: 0;
+
+  width: 80%;
+  height: 3px;
+
+  background-color: $bg-color-1;
+}
+
+.field-checkbox__title {
+  position: relative;
+  z-index: 100;
+  width: 165px;
 }
 
 .field-checkbox__label {

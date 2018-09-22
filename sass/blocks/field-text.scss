@@ -1,9 +1,24 @@
 .field-text {
-  @include padding-mobile;
+  position: relative;
 }
 
-.field-text--contacts {
-  padding-top: 50px;
+.field-text--contacts::after {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  top: 34px;
+  right: 0;
+
+  width: 80%;
+  height: 3px;
+
+  background-color: $bg-color-1;
+}
+
+.field-text__title {
+  position: relative;
+  z-index: 100;
+  width: 200px;
 }
 
 .field-text__label {
