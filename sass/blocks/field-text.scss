@@ -3,16 +3,9 @@
 }
 
 .field-text--contacts::after {
-  content: "";
-  position: absolute;
-  z-index: 10;
+  @include pseudo;
   top: 34px;
-  right: 0;
-
   width: 80%;
-  height: 3px;
-
-  background-color: $bg-color-1;
 }
 
 .field-text__title {
@@ -32,4 +25,41 @@
 
 .field-text__input {
   flex-grow: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .field-text {
+    padding-top: 30px;
+  }
+
+  .field-text__title {
+    width: 514px;
+  }
+
+  .field-text__input {
+    font-size: $font-size-4;
+  }
+
+  .field-text__input--email {
+    padding-right: 50px;
+
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-size: 19px 17px;
+    background-position: 97% center;
+  }
+
+  .field-text__input--tel {
+    padding-right: 50px;
+
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    background-position: 97.7% center;
+  }
+
+  .field-text--contacts::after {
+    top: 70px;
+    width: 100%;
+  }
 }

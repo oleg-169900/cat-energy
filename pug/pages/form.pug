@@ -30,43 +30,47 @@ html(lang="ru")
                 input.form__input.field-text__input(type="text" name="age")
           div.field-radio
             div.center.form__center
-              label.form__label.field-radio__label
-                input.form__input.field-radio__input(type="radio" name="program" checked)
-                span.form__text.field-radio__text Похудение
-              label.form__label.field-radio__label
-                input.form__input.field-radio__input(type="radio" name="program")
-                span.form__text.field-radio__text Набор массы
-              label.form__label.field-radio__label
-                input.form__input.field-radio__input(type="radio" name="program")
-                span.form__text.field-radio__text Не знаю (нужен ваш совет)
+              div.field-radio__items
+                label.form__label.field-radio__label
+                  input.form__input.field-radio__input(type="radio" name="program" checked)
+                  span.form__text.field-radio__text Похудение
+                label.form__label.field-radio__label
+                  input.form__input.field-radio__input(type="radio" name="program")
+                  span.form__text.field-radio__text Набор массы
+                label.form__label.field-radio__label
+                  input.form__input.field-radio__input(type="radio" name="program")
+                  span.form__text.field-radio__text Не знаю (нужен ваш совет)
           div.field-text.field-text--contacts
             div.center.form__center
               h2.form__title.field-text__title Контактные данные (владельца кота)
               label.form__label.field-text__label
                 span.form__text.field-text__text E-mail*
-                input.form__input.field-text__input(type="text" name="email" required)
+                input.form__input.field-text__input.field-text__input--email(type="text" name="email" required)
               label.form__label.field-text__label
                 span.form__text.field-text__text Телефон*
-                input.form__input.field-text__input(type="text" name="tel" required)
+                input.form__input.field-text__input.field-text__input--tel(type="text" name="tel" required)
           div.field-textarea
             div.center.form__center
               h2.form__title.field-textarea__title Комментарий
-              div.field-textarea__textarea.textarea(name="comment" rows="5" cols="24")
+              textarea.field-textarea__textarea.textarea(name="comment" rows="5" cols="24").
+                Расскажите обо всех повадках кота
           div.field-checkbox
             div.center.form__center
               h2.form__title.field-checkbox__title Дополнительно
-              label.form__label.field-checkbox__label
-                input.form__input.field-checkbox__input(type="checkbox" name="extra" checked)
-                span.form__text.field-checkbox__text Сахарозаменитель
-              label.form__label.field-checkbox__label
-                input.form__input.field-checkbox__input(type="checkbox" name="extra")
-                span.form__text.field-checkbox__text Питьевая вода
-              label.form__label.field-checkbox__label
-                input.form__input.field-checkbox__input(type="checkbox" name="extra")
-                span.form__text.field-checkbox__text Молоко
-              label.form__label.field-checkbox__label
-                input.form__input.field-checkbox__input(type="checkbox" name="extra")
-                span.form__text.field-checkbox__text Витамины
+              div.field-checkbox__items
+                label.form__label.field-checkbox__label
+                  input.form__input.field-checkbox__input(type="checkbox" name="extra" checked)
+                  span.form__text.field-checkbox__text Сахарозаменитель
+                label.form__label.field-checkbox__label
+                  input.form__input.field-checkbox__input(type="checkbox" name="extra")
+                  span.form__text.field-checkbox__text Питьевая вода
+                label.form__label.field-checkbox__label
+                  input.form__input.field-checkbox__input(type="checkbox" name="extra")
+                  span.form__text.field-checkbox__text Молоко
+                label.form__label.field-checkbox__label
+                  input.form__input.field-checkbox__input(type="checkbox" name="extra")
+                  span.form__text.field-checkbox__text Витамины
+          footer.form__footer.center
             input.form__btn(type="submit" name="send" value="Отправить заявку")
             div.form__text.form__text--required *&nbsp;&nbsp;&ndash;&nbsp;&nbsp;Обязательные поля
         include ../modules/contacts.pug

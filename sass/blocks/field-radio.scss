@@ -26,3 +26,16 @@
 .field-radio__input:checked + .field-radio__text::before {
   background: radial-gradient(at center, $bg-color-1 30%, #ffffff 30%);
 }
+
+@media (min-width: $tablet-width) {
+  .field-radio {
+    border: none;
+  }
+
+  .field-radio__items {
+    width: 568px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid $border-color;
+  }
+}

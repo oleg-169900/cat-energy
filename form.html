@@ -49,53 +49,59 @@
           </div>
           <div class="field-radio">
             <div class="center form__center">
-              <label class="form__label field-radio__label">
-                <input class="form__input field-radio__input" type="radio" name="program" checked><span class="form__text field-radio__text">Похудение</span>
-              </label>
-              <label class="form__label field-radio__label">
-                <input class="form__input field-radio__input" type="radio" name="program"><span class="form__text field-radio__text">Набор массы</span>
-              </label>
-              <label class="form__label field-radio__label">
-                <input class="form__input field-radio__input" type="radio" name="program"><span class="form__text field-radio__text">Не знаю (нужен ваш совет)</span>
-              </label>
+              <div class="field-radio__items">
+                <label class="form__label field-radio__label">
+                  <input class="form__input field-radio__input" type="radio" name="program" checked><span class="form__text field-radio__text">Похудение</span>
+                </label>
+                <label class="form__label field-radio__label">
+                  <input class="form__input field-radio__input" type="radio" name="program"><span class="form__text field-radio__text">Набор массы</span>
+                </label>
+                <label class="form__label field-radio__label">
+                  <input class="form__input field-radio__input" type="radio" name="program"><span class="form__text field-radio__text">Не знаю (нужен ваш совет)</span>
+                </label>
+              </div>
             </div>
           </div>
           <div class="field-text field-text--contacts">
             <div class="center form__center">
               <h2 class="form__title field-text__title">Контактные данные (владельца кота)</h2>
               <label class="form__label field-text__label"><span class="form__text field-text__text">E-mail*</span>
-                <input class="form__input field-text__input" type="text" name="email" required>
+                <input class="form__input field-text__input field-text__input--email" type="text" name="email" required>
               </label>
               <label class="form__label field-text__label"><span class="form__text field-text__text">Телефон*</span>
-                <input class="form__input field-text__input" type="text" name="tel" required>
+                <input class="form__input field-text__input field-text__input--tel" type="text" name="tel" required>
               </label>
             </div>
           </div>
           <div class="field-textarea">
             <div class="center form__center">
               <h2 class="form__title field-textarea__title">Комментарий</h2>
-              <div class="field-textarea__textarea textarea" name="comment" rows="5" cols="24"></div>
+              <textarea class="field-textarea__textarea textarea" name="comment" rows="5" cols="24">Расскажите обо всех повадках кота</textarea>
             </div>
           </div>
           <div class="field-checkbox">
             <div class="center form__center">
               <h2 class="form__title field-checkbox__title">Дополнительно</h2>
-              <label class="form__label field-checkbox__label">
-                <input class="form__input field-checkbox__input" type="checkbox" name="extra" checked><span class="form__text field-checkbox__text">Сахарозаменитель</span>
-              </label>
-              <label class="form__label field-checkbox__label">
-                <input class="form__input field-checkbox__input" type="checkbox" name="extra"><span class="form__text field-checkbox__text">Питьевая вода</span>
-              </label>
-              <label class="form__label field-checkbox__label">
-                <input class="form__input field-checkbox__input" type="checkbox" name="extra"><span class="form__text field-checkbox__text">Молоко</span>
-              </label>
-              <label class="form__label field-checkbox__label">
-                <input class="form__input field-checkbox__input" type="checkbox" name="extra"><span class="form__text field-checkbox__text">Витамины</span>
-              </label>
+              <div class="field-checkbox__items">
+                <label class="form__label field-checkbox__label">
+                  <input class="form__input field-checkbox__input" type="checkbox" name="extra" checked><span class="form__text field-checkbox__text">Сахарозаменитель</span>
+                </label>
+                <label class="form__label field-checkbox__label">
+                  <input class="form__input field-checkbox__input" type="checkbox" name="extra"><span class="form__text field-checkbox__text">Питьевая вода</span>
+                </label>
+                <label class="form__label field-checkbox__label">
+                  <input class="form__input field-checkbox__input" type="checkbox" name="extra"><span class="form__text field-checkbox__text">Молоко</span>
+                </label>
+                <label class="form__label field-checkbox__label">
+                  <input class="form__input field-checkbox__input" type="checkbox" name="extra"><span class="form__text field-checkbox__text">Витамины</span>
+                </label>
+              </div>
             </div>
+          </div>
+          <footer class="form__footer center">
             <input class="form__btn" type="submit" name="send" value="Отправить заявку">
             <div class="form__text form__text--required">*&nbsp;&nbsp;&ndash;&nbsp;&nbsp;Обязательные поля</div>
-          </div>
+          </footer>
         </form>
         <section class="contacts contacts--secondary">
           <h2 class="hidden">Контакты</h2>

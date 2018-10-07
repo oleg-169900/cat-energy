@@ -69,10 +69,24 @@
   .page-heading {
     padding: 0;
     padding-top: 50px;
+    border: none;
   }
 
   .page-heading__center {
     position: relative;
+  }
+
+  .page-heading__title {
+    font-size: $font-size-24;
+  }
+
+  .page-heading__text {
+    width: 345px;
+    margin-top: 40px;
+    @include padding-tablet;
+
+    font-size: $font-size-4;
+    line-height: 30px;
   }
 
   .page-heading--main {
@@ -83,19 +97,18 @@
     .page-heading__title {
       width: 427px;
       margin-left: 100px;
-
-      font-size: $font-size-24;
       line-height: 60px;
       text-align: left;
     }
 
     .page-heading__text {
       width: 300px;
+      margin: 0;
       margin-left: 100px;
+      padding: 0;
       padding-top: 50px;
 
       text-align: left;
-      font-size: $font-size-4;
       font-weight: normal;
     }
   }
