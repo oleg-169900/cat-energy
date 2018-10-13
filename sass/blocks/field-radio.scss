@@ -39,3 +39,11 @@
     border: 1px solid $border-color;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .field-radio__items {
+    width: auto;
+    padding-right: 0;
+
+  }
+}

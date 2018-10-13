@@ -91,3 +91,48 @@
     margin: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 65px;
+  }
+
+  .form > * {
+    width: 100%;
+  }
+
+  .form__user {
+    width: 570px;
+    margin-right: 30px;
+
+    .form__center {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  .form__radio {
+    width: 570px;
+    margin-left: 30px;
+
+    .form__center {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  .form__label {
+    padding-left: 0;
+  }
+
+  .form__label:first-child {
+    padding-top: 0;
+  }
+
+  .form__label:last-child {
+    padding-bottom: 0;
+  }
+}

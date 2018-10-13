@@ -63,3 +63,13 @@
     width: 100%;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .field-text {
+    padding: 0;
+  }
+
+  .field-text--contacts {
+    padding-top: 30px;
+  }
+}
