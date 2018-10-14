@@ -43,16 +43,17 @@ html(lang="ru")
           div.field-text.field-text--contacts
             div.center.form__center
               h2.form__title.field-text__title Контактные данные (владельца кота)
-              label.form__label.field-text__label
-                span.form__text.field-text__text E-mail*
-                input.form__input.field-text__input.field-text__input--email(type="text" name="email" required)
-              label.form__label.field-text__label
-                span.form__text.field-text__text Телефон*
-                input.form__input.field-text__input.field-text__input--tel(type="text" name="tel" required)
+              div.field-text__items
+                label.form__label.field-text__label
+                  span.form__text.field-text__text E-mail*
+                  input.form__input.field-text__input.field-text__input--email(type="text" name="email" required)
+                label.form__label.field-text__label
+                  span.form__text.field-text__text Телефон*
+                  input.form__input.field-text__input.field-text__input--tel(type="text" name="tel" required)
           div.field-textarea
             div.center.form__center
               h2.form__title.field-textarea__title Комментарий
-              textarea.field-textarea__textarea.textarea(name="comment" rows="5" cols="24").
+              textarea.field-textarea__textarea(name="comment" rows="5" cols="24").
                 Расскажите обо всех повадках кота
           div.field-checkbox
             div.center.form__center

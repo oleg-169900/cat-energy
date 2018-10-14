@@ -68,3 +68,14 @@
     height: 40px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .field-checkbox__items {
+    justify-content: space-between;
+  }
+
+  .field-checkbox__label {
+    width: 245px;
+    padding: 0;
+  }
+}

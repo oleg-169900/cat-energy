@@ -44,3 +44,17 @@
     font-size: $font-size-4;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .field-textarea {
+    padding-top: 40px;
+  }
+
+  .field-textarea::after {
+    top: 83px;
+  }
+
+  .field-textarea__textarea {
+    width: 97%;
+  }
+}

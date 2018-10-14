@@ -70,6 +70,26 @@
   }
 
   .field-text--contacts {
-    padding-top: 30px;
+    padding-top: 50px;
+
+    .field-text__label {
+      width: 570px;
+      padding: 0;
+    }
   }
+
+  .field-text--contacts::after {
+    top: 90px;
+  }
+
+  .field-text__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // .field-text__input--tel,
+  // .field-text__input--email {
+  //   width:
+  // }
 }

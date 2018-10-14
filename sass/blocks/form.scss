@@ -135,4 +135,18 @@
   .form__label:last-child {
     padding-bottom: 0;
   }
+
+  .form__footer {
+    width: 1200px;
+    justify-content: flex-start;
+  }
+
+  .form__btn {
+    width: 570px;
+    cursor: pointer;
+  }
+
+  .form__text--required {
+    margin-left: 80px;
+  }
 }
