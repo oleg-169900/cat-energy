@@ -81,21 +81,22 @@
 
 - for (var i = 0; i <= products.length - 1; i++) {
     article.product(id= products[i].id)
-      h3.product__title #{products[i].title}
-      picture.product__pic
-        source(media="(min-width: 1200px)" srcset= products[i].srcsetBig)
-        source(media="(min-width: 768px)" srcset= products[i].srcsetMedium)
-        img(src= products[i].src srcset= products[i].srcsetSmall alt= products[i].taste)
-      table.product__table
-        tbody
-          tr.product__row
-            td.troduct__cell Объём
-            td.troduct__cell #{products[i].weight}
-          tr.product__row
-            td.troduct__cell Вкус
-            td.product__cell #{products[i].taste}
-          tr.product__row
-            td.troduct__cell Цена
-            td.product__cell #{products[i].price}
-      button.product__btn(type="button") Заказать
+      div.center.product__center
+        h3.product__title #{products[i].title}
+        picture.product__pic
+          source(media="(min-width: 1200px)" srcset= products[i].srcsetBig)
+          source(media="(min-width: 768px)" srcset= products[i].srcsetMedium)
+          img(src= products[i].src srcset= products[i].srcsetSmall alt= products[i].taste)
+        table.product__table
+          tbody
+            tr.product__row
+              td.product__cell Объём
+              td.product__cell #{products[i].weight}
+            tr.product__row
+              td.product__cell Вкус
+              td.product__cell #{products[i].taste}
+            tr.product__row
+              td.product__cell Цена
+              td.product__cell #{products[i].price}
+        button.product__btn(type="button") Заказать
 - }
