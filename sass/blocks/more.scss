@@ -66,3 +66,49 @@
 
   background-color: $bg-color-2;
 }
+
+@media (min-width: $tablet-width) {
+  .more {
+    margin-top: 150px;
+    padding-top: 100px;
+    padding-bottom: 40px;
+
+    border: 1px solid $border-color;
+  }
+
+  .more:before {
+    top: 85px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 60px;
+    height: 2px;
+  }
+
+  .more:after {
+    top: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 2px;
+    height: 60px;
+  }
+
+  .more__title {
+    width: 140px;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-size: $font-size-4;
+  }
+
+  .more__text {
+    width: 180px;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-size: $font-size-2;
+  }
+
+  .more__link {
+    margin-top: 90px;
+  }
+}
