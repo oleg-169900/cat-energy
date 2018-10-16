@@ -4,21 +4,25 @@
       title: "Сахарозаменитель",
       quantity: "1 упаковка",
       price: "100 Р.",
+      btnName: "good-1",
     },
     {
       title: "Питьевая вода",
       quantity: "5 литров",
       price: "50 Р.",
+      btnName: "good-2",
     },
     {
       title: "Молоко",
       quantity: "1 литр",
       price: "100 Р.",
+      btnName: "good-3",
     },
     {
       title: "Витамины",
       quantity: "1 упаковка (30 г)",
       price: "300 Р.",
+      btnName: "good-4",
     },
   ]
 
@@ -28,4 +32,5 @@
       div.good__text
         span #{goods[i].quantity}
         span #{goods[i].price}
+      button.good__btn(name= goods[i].btnName) Заказать
 - }

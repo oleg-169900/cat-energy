@@ -4,17 +4,13 @@
   border-top: 1px solid $border-color;
 }
 
-.product__center {
+.product__inner {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 
   width: 280px;
   margin: 0 auto;
-}
-
-.product:last-child {
-  border-bottom: 1px solid $border-color;
 }
 
 .product__title {

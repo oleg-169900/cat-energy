@@ -1,0 +1,24 @@
+.extra {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  @include padding-mobile;
+}
+
+.extra::before {
+  @include pseudo;
+  top: 40px;
+  width: 80%;
+}
+
+.extra__title {
+  position: relative;
+  z-index: 100;
+
+  width: 250px;
+  margin-bottom: 25px;
+
+  font-size: $font-size-6;
+  font-weight: normal;
+  background-color: #ffffff;
+}

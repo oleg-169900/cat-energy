@@ -1,0 +1,36 @@
+.good {
+  padding: 20px 0;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+}
+
+.good__title {
+  margin-bottom: 10px;
+  font-size: $font-size-2;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.good__text {
+  display: flex;
+
+  margin-bottom: 15px;
+
+  justify-content: space-between;
+  font-family: arial, sans-serif;
+  font-size: $font-size-1;
+}
+
+.good__btn {
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+
+  font-family: "OswaldMedium", arial, sans-serif;
+  color: #ffffff;
+  font-size: $font-size-2;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  background-color: $bg-color-1;
+}
