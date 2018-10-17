@@ -57,3 +57,26 @@
     text-align: left;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .gift {
+    width: 245px;
+    margin: 0;
+  }
+
+  .gift::before {
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .gift__text {
+    top: 190px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 165px;
+
+    text-align: center;
+  }
+}

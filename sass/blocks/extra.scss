@@ -40,3 +40,24 @@
     top: 80px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .extra {
+    padding: 80px 0;
+  }
+
+  .extra::before {
+    top: 110px;
+  }
+
+  .extra__center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .extra__list {
+    width: 895px;
+  }
+}

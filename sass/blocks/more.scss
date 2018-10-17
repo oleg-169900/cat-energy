@@ -112,3 +112,16 @@
     margin-top: 90px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .more {
+    width: 245px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .more__link {
+    width: 170px;
+    margin-top: 93px;
+  }
+}

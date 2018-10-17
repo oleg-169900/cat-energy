@@ -103,3 +103,9 @@
     padding: 7px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .product__inner {
+    width: 165px;
+  }
+}
