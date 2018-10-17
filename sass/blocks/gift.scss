@@ -35,3 +35,25 @@
   font-size: $font-size-2;
   color: #ffffff;
 }
+
+@media (min-width: $tablet-width) {
+  .gift {
+    width: auto;
+    margin: 40px auto;
+  }
+
+  .gift::before  {
+    left: 120px;
+    right: auto;
+  }
+
+  .gift__text {
+    top: 70px;
+    left: auto;
+    right: 20px;
+
+    width: 165px;
+
+    text-align: left;
+  }
+}

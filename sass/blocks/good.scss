@@ -13,10 +13,10 @@
 
 .good__text {
   display: flex;
+  justify-content: space-between;
 
   margin-bottom: 15px;
 
-  justify-content: space-between;
   font-family: arial, sans-serif;
   font-size: $font-size-1;
 }
@@ -33,4 +33,29 @@
   text-transform: uppercase;
 
   background-color: $bg-color-1;
+}
+
+@media (min-width: $tablet-width) {
+  .good {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 30px 0;
+    @include padding-tablet;
+
+    border-bottom: none;
+  }
+
+  .good:last-child {
+    border-bottom: 1px solid $border-color;
+  }
+
+  .good__title {
+    font-size: $font-size-4;
+  }
+
+  .good__text {
+    width: 225px;
+  }
 }

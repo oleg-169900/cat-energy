@@ -24,5 +24,19 @@
 }
 
 @media (min-width: $tablet-width) {
-  
+  .extra {
+    padding-top: 50px;
+  }
+
+  .extra__title {
+    width: 410px;
+    margin-bottom: 70px;
+    text-align: center;
+    font-size: $font-size-12;
+  }
+
+  .extra::before {
+    width: 100%;
+    top: 80px;
+  }
 }
